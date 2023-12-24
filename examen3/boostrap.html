@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Boostrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                rel="stylesheet"
+                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                crossorigin="anonymous" />
+
+        <script src="script.js"></script>
+        <!-- <script src="indexdb.js"></script> -->
+        
+
+        <!-- libreras de bootstrap -->
+          <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+          crossorigin="anonymous"></script>
+    </head>
+
+  <body>
+
+    <h1 class="text-end">REFLEXIONES BLIBLICAS</h1>
+    
+    
+
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-bg-secondary p-3">
+        <div class="container-fluid">
+
+           
+            <img
+                src="https://es.jesus.net/wp-content/uploads/2019/07/3.-Face@2x-100-min-2.jpg"
+             
+                alt="logo"
+                width="180"
+                class="rounded mx-auto d-block" />
+                
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de</a>
+                        </li>
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                
+                                Noticias
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">VIDA ETERNA</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">LEGENDARIOS</a>
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Mas...</a>
+                                </li>
+                            </ul>
+                          </div>
+                        
+                </ul>
+                
+                <div>
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-warning" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+
+                </div>
+
+                <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Buscar
+                        </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+          <!-- 7 SACRAMENTOS -->
+      <div class="col-4">
+        <div class="text-center"><span class="badge rounded-pill text-bg-info" ><h6>LOS 7 SACRAMENTOS</h6></span></div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                1.- BAUTISMO
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                El bautismo es el sacramento por el cual nacemos a la vida cristiana. Es el primer sacramento que recibimos y es la puerta de entrada a los demás sacramentos. En el bautismo, nuestros pecados son perdonados y somos hechos hijos de Dios.
+                En la Biblia, el bautismo se menciona como un acto de fe en el cual una persona es sumergida en agua para simbolizar un nuevo nacimiento espiritual y la entrada en la comunidad de creyentes.
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo">
+                2.- CONFIRMACIÓN
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                La Confirmación es el sacramento por el cual recibimos el Espíritu Santo. En la Confirmación, somos fortalecidos en nuestra fe y recibimos los dones del Espíritu Santo para que podamos vivir como cristianos.
+                En la Biblia, hay referencias al Espíritu Santo siendo derramado sobre los creyentes para fortalecerlos y capacitarlos en su fe, como se describe en el libro de los Hechos (8:14-17).
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree">
+                3.- EUCARISTÍA
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                La Eucaristía es el sacramento por el cual recibimos el cuerpo y la sangre de Jesucristo. En la Eucaristía, nos unimos a Cristo y nos alimentamos de su amor.
+                Jesús instituyó este sacramento durante la Última Cena. En la Biblia, se habla de comer el pan y beber el vino como un acto simbólico del cuerpo y sangre de Jesús entregados por la salvación de la humanidad.
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                4.- PENITENCIA
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Aunque la palabra "penitencia" no se menciona directamente en la Biblia en relación con un sacramento, hay varias referencias a la confesión de pecados y al arrepentimiento como parte esencial de la vida cristiana.
+                es el sacramento por el cual perdonamos nuestros pecados. En la Reconciliación, nos encontramos con el amor misericordioso de Dios y recibimos el perdón de nuestros pecados.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive">
+                5.- UNCION DE LOS ENFERMOS
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Unción de los enfermos: En el libro de Santiago (5:14-15), se menciona la imposición de manos y la unción con aceite como una práctica de sanación y restauración espiritual para aquellos que están enfermos.
+                La Unción de los Enfermos es el sacramento por el cual se da la gracia de la curación a los enfermos. En la Unción de los Enfermos, recibimos la fuerza y ​​el consuelo de Dios para afrontar la enfermedad.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix">
+                6.- ORDEN
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                El Orden Sagrado es el sacramento por el cual se ordenan los sacerdotes, diáconos y obispos. En el Orden Sagrado, recibimos la gracia de servir a Dios y a su pueblo.
+                En el Nuevo Testamento, se habla de la ordenación de líderes dentro de la comunidad cristiana, como los apóstoles y los ancianos, para guiar, enseñar y administrar los sacramentos.
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven"
+                aria-expanded="false"
+                aria-controls="flush-collapseSeven">
+                7.- MATRIMONIO
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                El Matrimonio es el sacramento por el cual un hombre y una mujer se unen en amor para toda la vida. En el Matrimonio, recibimos la gracia de amarnos y apoyarnos mutuamente como Cristo ama a su Iglesia.
+                En la Biblia, el matrimonio se presenta como una unión sagrada y comprometida entre un hombre y una mujer, estableciendo una relación de amor y compañerismo bajo la bendición de Dios.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- IMAGENES -->
+      <div class="col-4">
+
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://i.pinimg.com/originals/b6/2f/87/b62f87dfd5373e71bb3f9eeeca88cf3d.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.erescristiano.com/wp-content/uploads/2023/03/Screenshot_106.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://verdaderareligion.com/wp-content/uploads/2022/12/por-que-es-importante-rendir-mi-vida-a-jesucristo.jpeg" class="d-block w-100" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+
+
+
+
+        <!-- <img
+          src="https://pastoreandotualma.com/wp-content/uploads/2012/08/Christ-King-in-clouds-heavens-281x4001.jpg"
+          class="rounded mx-auto d-block"
+          alt="..."
+          
+           /> -->
+
+      </div>
+          <!-- 7 PECADOS -->
+      <div class="col-4">        
+        <div class="text-center"><span class="badge rounded-pill text-bg-warning" ><h6>LOS 7 PECADOS CAPITALES</h6></span></div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                1.- SOBERBIA
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La soberbia es un exceso de amor propio y una actitud arrogante que lleva a desear ser superior a los demás y rechazar la autoridad de Dios. Es considerado el pecado principal, ya que puede ser la raíz de todos los demás pecados.
+                Es un sentimiento de superioridad hacia los demás. <strong>Se caracteriza por la arrogancia, el orgullo y el desprecio hacia los demás.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2.- AVARICIA
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La avaricia es un deseo desmedido de acumular riquezas y posesiones materiales. Se caracteriza por la codicia, la explotación de los demás y la falta de generosidad hacia los necesitados.
+                <strong>Es un deseo desmedido de poseer bienes materiales o riqueza. Se caracteriza por la codicia, la envidia y la tacañería.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3.- ENVIDIA
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La envidia es el resentimiento y el deseo de tener lo que otros poseen, ya sea en términos de bienes materiales, talentos o logros. En lugar de alegrarse por el éxito de los demás, el envidioso siente tristeza o resentimiento.
+                <STRong>Es un sentimiento de tristeza o rencor por el bien ajeno. Se caracteriza por el resentimiento, la celosía y la amargura.</STRong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                4.- IRA
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La ira representa un descontrol emocional y una respuesta violenta o negativa ante situaciones que nos desagradan. Es importante distinguir entre la ira justa y la ira desmedida, ya que la ira justa puede ser una respuesta adecuada ante la injusticia.
+                <strong>Es un sentimiento de enojo intenso que puede llevar a la violencia. Se caracteriza por la furia, la agresividad y el resentimiento.</strong>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                5.- LUJURIA
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La lujuria es el deseo sexual desordenado y la búsqueda de placer sexual fuera del contexto del matrimonio y del amor verdadero. Se refiere a una actitud y comportamiento sexual inapropiado y egoísta.
+
+                <strong>Es un deseo desmedido de placer sexual. Se caracteriza por la promiscuidad, la impureza y la falta de control.</strong>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                6.- GULA
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La gula se refiere al exceso en el consumo de alimentos y bebidas, y también puede referirse a un deseo insaciable de placeres físicos en general. Es una falta de moderación y autocontrol en relación con los placeres sensoriales.
+                <strong>Es un deseo desmedido de comer o beber. Se caracteriza por la glotonería, la intemperancia y la falta de moderación.</strong>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                7.- PEREZA
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La pereza, también conocida como acedia, es la falta de interés, energía o compromiso en la realización de tareas importantes o en el crecimiento espiritual. Se caracteriza por la apatía, la negligencia y la falta de responsabilidad.
+                <strong>Es la falta de ganas de trabajar o de hacer esfuerzo. Se caracteriza por la apatía, la indolencia y la procrastinación.</strong>
+
+              </div>
+            </div>
+          </div>
+        </div>
+             
+     
+      </div>
+    </div>
+      <!-- 10 mandamientos -->
+    <div class="row">
+      <div class="container text-center p-3 text-bg-secondary col-12">
+        <div class="text-center"><span class="badge rounded-pill text-bg-info" ><h4>LOS 10 MANDAMIENTOS</h4></span></div>
+        <div class="row justify-content-start p-3" >
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>1.- NO TENDRAS OTROS DIOSES DELANTE DE MI</h6></span>
+            
+          </div>
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>2.- NO TE HARAS IDOLOS</h6></span>
+          </div>
+        </div>
+        <div class="row justify-content-center p-3">
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>3.- NO TOMARAS EL NOMBRE DE DIOS ENVANO</h6></span>
+          </div>
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>4.- ACUERDATE EL DIA DE REPOSO PARA SANTIFICARLO</h6></span>
+          </div>
+        </div>
+        <div class="row justify-content-end p-3">
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>5.- HONRRARAS A TU PADRE Y MADRE</h6></span>
+          </div>
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>6.- NO MATARAS</h6></span>
+          </div>
+        </div>
+        <div class="row justify-content-around p-3">
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>7.- NO COMETERAS ACTOS IMPUROS</h6></span>
+          </div>
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>8.- NO ROBARAS</h6></span>
+          </div>
+        </div>
+        <div class="row justify-content-between p-3">
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>9.- NO HABLARAS CONTRA TU PROJIMO FALSO TESTIMONIO</h6></span>
+          </div>
+          <div class="col-4">
+            <span class="badge text-bg-dark"><h6>10.- NO CODICIARAS</h6></span>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+<!-- juego de los 7 pecados capitales -->
+    <div class="row">
+      <div class="col-6">
+        <div class="container p-3 mb-2 bg-primary-subtle text-emphasis-primary ">
+            <div class="p-3">
+                <h1> <strong>JUEGO DE PREGUNTAS Y RESPUESTAS</strong> </h1>
+                <h2>Los 7 pecados capitales</h2>
+                <div id="question-container"></div>
+            </div>
+        
+
+        </div>
+
+      </div>
+      
+               
+       <div class="col-6 p-2">
+            
+            <img
+                
+                src="https://www.comorezarelrosario.com/storage/2018/07/rezar-rosario-esquema-v5.jpg"
+                
+                height="200"
+                class="img-fluid" alt="..."/>
+
+        </div>
+    
+
+    </div>
+
+    <!-- base de datos indexdb -->
+
+
+
+      <!-- formularios -->
+       <div class="col-12 p-1 text-bg-info p-3">
+        <h1>Formulario de encuestas</h1>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="validationCustom01" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required placeholder="Nombres">
+            
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required placeholder="Apellidos">
+            
+          </div>
+          
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">Email</label>
+            <input type="text" class="form-control" id="validationCustom03" required placeholder="ejemplo@gmail.com">
+            
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom04" class="form-label">Departamento</label>
+            <select class="form-select" id="validationCustom04" required>
+              
+              <option>La Paz</option>
+              <option>Oruro</option>
+              <option>Potosí</option>
+              <option>Cochabamba</option>
+              <option>Chuquisaca</option>
+              <option>Tarija</option>
+              <option>Pando</option>
+              <option>Beni</option>
+              <option>Santa Cruz</option>
+
+            </select>
+            
+          </div>
+         
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Aceptar las Notificaciones
+              </label>
+              
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+       
+        </form>
+
+      </div>
+      
+    </div>
+
+
+
+
+
+    
+    
+    <script>
+      const insertar = () => {
+        const _idPersona = document.getElementById("IdPersona").value.trim();
+        const _nombre = document.getElementById("Nombre").value.trim();
+
+        if (!_idPersona || !_nombre) {
+          console.error("Los campos no pueden estar vacíos.");
+          return;
+        }
+
+        const art = { IdPersona: _idPersona, nombre: _nombre };
+        const transaccion = db.transaction("persona", "readwrite");
+        const objeto = transaccion.objectStore("persona");
+
+        const cargarInfo = objeto.add(art);
+
+        cargarInfo.onsuccess = () => {
+          console.log("Guardado con éxito");
+          devolver(); // Llamar a devolver después de un éxito en la inserción
+        };
+        cargarInfo.onerror = (e) =>
+          console.error("Error al guardar:", e.target.error);
+      };
+
+      const devolver = () => {
+        const lista = document.getElementById("lista");
+        lista.innerHTML = ""; // Limpiar el contenido de la lista antes de agregar nuevos elementos
+        db = dbConnection.result;
+        const transaccion = db.transaction("persona", "readonly");
+        const objeto = transaccion.objectStore("persona");
+
+        const fragmento = document.createDocumentFragment();
+
+        objeto.openCursor().onsuccess = (e) => {
+          const cursor = e.target.result;
+          if (cursor) {
+            const li = document.createElement("li");
+            li.className = "list-group-item";
+            li.textContent = `${cursor.value.IdPersona} -- ${cursor.value.nombre}`;
+
+            const botonEliminar = document.createElement("button");
+            botonEliminar.type = "button";
+            botonEliminar.className = "btn btn-outline-danger";
+            botonEliminar.textContent = "Eliminar";
+            botonEliminar.onclick = () => eliminar(cursor.value.IdPersona);
+
+            li.appendChild(botonEliminar);
+            fragmento.appendChild(li);
+
+            cursor.continue();
+          } else {
+            lista.appendChild(fragmento);
+          }
+        };
+      };
+
+      const eliminar = (clave) => {
+        if (clave == null) {
+          console.error("La clave proporcionada es inválida.");
+          return;
+        }
+
+        console.log("Eliminando persona con clave:", clave);
+
+        var transaccion = db.transaction("persona", "readwrite");
+
+        transaccion.onerror = (e) =>
+          console.error("Error en la transacción:", e.target.error);
+
+        const store = transaccion.objectStore("persona");
+        const solicitudEliminacion = store.delete(clave);
+
+        solicitudEliminacion.onsuccess = () => {
+          console.log("Persona eliminada con éxito.");
+          devolver(); // Llamar a devolver después de una eliminación exitosa
+        };
+
+        solicitudEliminacion.onerror = (e) =>
+          console.error("Error al eliminar:", e.target.error);
+      };
+    </script>
+
+
+
+
+  </body>
+</html>

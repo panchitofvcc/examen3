@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio Práctico</title>
+</head>
+<body>
+  <h1>Ejercicio Práctico</h1>
+  
+  <select id="selectEjercicio" onchange="seleccionarEjercicio()">
+    <option value="">-- Seleccione un ejercicio --</option>
+    <option value="ejercicio1">Ejercicio 1: Días de la semana</option>
+    <option value="ejercicio2">Ejercicio 2: Apto para conducir</option>
+    <option value="ejercicio3">Ejercicio 3: Promedio de notas</option>
+    <option value="ejercicio4">Ejercicio 4: Número Mayor</option>
+    <option value="ejercicio5">Ejercicio 5: Apto para votar</option>
+    <option value="ejercicio6">Ejercicio 6: Número par o impar</option>
+  </select>
+
+  <div id="ejercicioContainer"></div>
+
+  <script>
+
+
+        function seleccionarEjercicio() {
+          var select = document.getElementById("selectEjercicio");
+          var ejercicio = select.value;
+          var ejercicioContainer = document.getElementById("ejercicioContainer");
+          ejercicioContainer.innerHTML = "";
+
+          if (ejercicio === "ejercicio1") {
+            ejercicioContainer.innerHTML = '<label for="numero">Ingresa un número (1-7):</label> <input type="number" id="numero"><button onclick="mostrarDiaSemana()">Mostrar día de la semana</button>';
+          } else if (ejercicio === "ejercicio2") {
+            ejercicioContainer.innerHTML = '<label for="edad">Ingresa tu edad:</label> <input type="number" id="edad"><button onclick="verificarConducir()">Verificar si puedes conducir</button>';
+          } else if (ejercicio === "ejercicio3") {
+            ejercicioContainer.innerHTML = '<label for="nota1">Nota 1:</label> <input type="number" id="nota1"><br><label for="nota2">Nota 2:</label> <input type="number" id="nota2"><br><label for="nota3">Nota 3:</label> <input type="number" id="nota3"><br><button onclick="calcularPromedio()">Calcular Promedio</button>';
+          } else if (ejercicio === "ejercicio4") {
+            ejercicioContainer.innerHTML = '<label for="numero1">Número 1:</label> <input type="number" id="numero1"><br><label for="numero2">Número 2:</label> <input type="number" id="numero2"><br><label for="numero3">Número 3:</label> <input type="number" id="numero3"><br><button onclick="encontrarMayor()">Encontrar Mayor</button>';
+          } else if (ejercicio === "ejercicio5") {
+            ejercicioContainer.innerHTML = '<label for="edad">Ingresa tu edad:</label> <input type="number" id="edad"><button onclick="verificarVotar()">Verificar si puedes votar</button>';
+          } else if (ejercicio === "ejercicio6") {
+            ejercicioContainer.innerHTML = '<label for="numero">Ingresa un número:</label> <input type="number" id="numero"><button onclick="verificarParImpar()">Verificar si es par o impar</button>';
+          }
+        }
+
+        function mostrarDiaSemana() {
+          var input = document.getElementById("numero").value;
+          var diaSemana;
+
+          switch (parseInt(input)) {
+            case 1:
+              diaSemana = "Sábado";
+              break;
+            case 2:
+              diaSemana = "Domingo";
+              break;
+            case 3:
+              diaSemana = "Lunes";
+              break;
+            case 4:
+              diaSemana = "Martes";
+              break;
+            case 5:
+              diaSemana = "Miercoles";
+              break;
+            case 6:
+              diaSemana = "Jueves";
+              break;
+            case 7:
+              diaSemana = "Viernes";
+              break;
+            default:
+              diaSemana = "No corresponde a un día de la semana";
+              break;
+          }
+
+          alert(diaSemana);
+        }
+
+        function verificarConducir() {
+          var edad = document.getElementById("edad").value;
+
+          if (!isNaN(edad) && parseInt(edad) >= 18) {
+            alert("Eres apto para conducir.");
+          } else {
+            alert("No eres apto para conducir.");
+          }
+        }
+
+        function calcularPromedio() {
+          var nota1 = document.getElementById("nota1").value;
+          var nota2 = document.getElementById("nota2").value;
+          var nota3 = document.getElementById("nota3").value;
+
+          if (!isNaN(nota1) && !isNaN(nota2) && !isNaN(nota3)) {
+            var promedio = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
+
+            if (promedio >= 51) {
+              alert("Aprobado con un promedio de " + promedio.toFixed(2));
+            } else {
+              alert("Suspendido y Reprobado!!! con un promedio de " + promedio.toFixed(2));
+            }
+          } else {
+            alert("Ingresa notas válidas (números).");
+          }
+        }
+
+        function encontrarMayor() {
+          var numero1 = document.getElementById("numero1").value;
+          var numero2 = document.getElementById("numero2").value;
+          var numero3 = document.getElementById("numero3").value;
+
+          if (!isNaN(numero1) && !isNaN(numero2) && !isNaN(numero3)) {
+            var mayor = Math.max(parseInt(numero1), parseInt(numero2), parseInt(numero3));
+            alert("El número mayor es: " + mayor);
+          } else {
+            alert("Ingresa números válidos.");
+          }
+        }
+
+        function verificarVotar() {
+          var edad = document.getElementById("edad").value;
+
+          if (!isNaN(edad) && parseInt(edad) >= 18) {
+            alert("Eres apto para votar.");
+          } else {
+            alert("No eres apto para votar.");
+          }
+        }
+
+        function verificarParImpar() {
+          var numero = document.getElementById('numero').value;
+
+          if (!isNaN(numero)) {
+            if (parseInt(numero) % 2 === 0) {
+              alert("El número ingresado es PAR.");
+            } else {
+              alert("El número ingresado es IMPAR.");
+            }
+          } else {
+            alert("Ingresa un número válido.");
+          }
+        }
+
+
+
+
+  </script>
+</body>
+</html>
